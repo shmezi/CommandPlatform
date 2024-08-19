@@ -1,4 +1,9 @@
 package lol.ezra.cf.examples
 
-class Main {
+import lol.ezra.cf.CommandParser
+
+fun main() {
+   val parser = CommandParser<User>()
+   parser.register(TestCommand::class.java)
+
 }

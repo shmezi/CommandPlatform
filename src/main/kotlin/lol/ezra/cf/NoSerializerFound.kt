@@ -1,4 +1,4 @@
 package lol.ezra.cf
 
-class NoSerializerFound {
+class NoSerializerFound(clazz: String) : Throwable("No serializer was found for type: $clazz") {
 }
